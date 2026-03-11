@@ -7,18 +7,15 @@ template<typename T>T get_rand(T l, T r) {
     return dis(rng);
 }
 
-
-template<typename T>void pri(T l, T r) {
+template<typename T>void pri_x(T l, T r) {
     uniform_int_distribution<long long> dis(l, r);
     cout<<dis(rng);
 }
 
-template<typename T>void pri(T l, T r, char op) {
+template<typename T>void pri_x_op(T l, T r, char op) {
     uniform_int_distribution<long long> dis(l, r);
     cout<<dis(rng)<<op;
 }
-
-
 
 template<typename T>void pri_arr(int len, T l, T r) {
     uniform_int_distribution<long long> dis(l, r);
@@ -29,7 +26,5 @@ template<typename T>void pri_arr(int len, T l, T r) {
 }
 
 int main() {
-    //cout<<"1\n";
-    int n=get_rand(100,6000);
-    pri_arr(n,-100,100);
+
 }

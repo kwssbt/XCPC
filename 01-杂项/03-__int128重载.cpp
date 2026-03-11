@@ -1,8 +1,3 @@
-#include<bits/stdc++.h>
-using namespace std;
-
-typedef __int128 i128;
-
 istream &operator>>(istream &is, __int128 &n) {
     string s;
     is >> s;
@@ -36,8 +31,8 @@ ostream &operator<<(ostream &os, __int128 n) {
     return os << s;
 }
  
-i128 toi128(const string &s) {
-    i128 n = 0;
+__int128 toi128(const string &s) {
+    __int128 n = 0;
     for (auto c : s) {
         n = n * 10 + (c - '0');
     }

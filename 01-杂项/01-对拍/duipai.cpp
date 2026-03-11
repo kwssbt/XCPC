@@ -25,6 +25,5 @@ int main() {
         cout << "AC #" << test_case << endl;
         test_case++;
     }
-    
     return 0;
 }
